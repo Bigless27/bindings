@@ -1,0 +1,37 @@
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-vertical-center {
+    align-items: center;
+}
+
+.flex-horizontal-center {
+    justify-content: center;
+}
+
+.flex-center {
+    align-content: center;
+    justify-content: center;
+}
+
+.loc-logo {
+    background-image: url('../assets/images/loc-logo-main.png');
+    height: 200px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+input {
+    margin: 0px 15px;
+    padding: 5px;
+}
+
+.onewaybinding {
+    margin-right: 15px;
+}
