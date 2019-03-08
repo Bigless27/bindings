@@ -21,20 +21,31 @@ class App extends Component {
   }
 
   render() {
-    let state = this.state;
+    let { oneWayBinding, twoWayBinding } = this.state;
     return (
-      <div className="App">
-        <img src={logo} className="App-logo" alt="logo" />
-        <div className="loc-logo"></div>
-        <h3>One and Two Way Binding in React</h3>
-        <div className="flex-container flex-vertical-center">
-          <h3>One Way Binding: </h3>
-          <div>{state.oneWayBinding}</div>
-        </div>
+      <div className="App flex-container flex-horizontal-center">
         <div>
-          <h3>Two Way Binding</h3>
-          <input value={state.twoWayBinding} onChange={(e) => this.updateBinding(e)} />
-          <div>{state.twoWayBinding}</div>
+          <img src={logo} className="App-logo" alt="logo" />
+          <div className="flex-container flex-center">
+            <div className="loc-logo"></div>
+          </div>
+          <h1>One and Two Way Binding in React</h1>
+          <div className="flex-container flex-column flex-horizontal-start">
+            <div className="flex-container flex-vertical-center">
+              <h3 className="one-way">One Way Binding: </h3>
+              <div>{oneWayBinding}</div>
+            </div>
+            <div className="flex-container flex-veritcal-center">
+              <h3>Two Way Binding: </h3>
+              <div className="flex-container flex-vertical-center">
+                <input className="twoBind" value={twoWayBinding} onChange={(e) => this.updateBinding(e)} />
+              </div>
+            </div>
+            <div className="flex-container">
+              <div className="react-results">React results: </div>
+              <div>{twoWayBinding}</div>
+            </div>
+          </div>
         </div>
       </div>
     );

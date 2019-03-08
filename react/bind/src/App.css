@@ -5,9 +5,17 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 100s linear;
   height: 300px;
   pointer-events: none;
+}
+
+.loc-logo {
+  background-image: url('./loc-logo-main.png');
+  height: 50px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .App-header {
@@ -46,6 +54,28 @@
   align-items: center;
 }
 
+.flex-horizontal-center {
+  justify-content: center;
+}
+
+.flex-horizontal-start {
+  justify-content: start;
+}
+
+.one-way {
+  margin-right: 15px;
+}
+
+.twoBind {
+  margin: 15px;
+  padding: 5px;
+  border: 2px solid #6cdffc;
+}
+
+.react-results {
+  margin-right: 15px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -53,4 +83,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+div {
+  color: whitesmoke;
+}
+
+h3 {
+  color: whitesmoke;
+}
+
+h1 {
+  color: white
 }
