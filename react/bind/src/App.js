@@ -42,7 +42,7 @@ class App extends Component {
               </div>
             </div>
             <div className="flex-container">
-              <div className="react-results">React results: </div>
+              <div className="react-results">React Results: </div>
               <div>{twoWayBinding}</div>
             </div>
           </div>

@@ -13,12 +13,14 @@
         <div [innerHTML]="onewaybind"></div>
         <div>{{onewaybind}}</div>
       </div>
-      <div class="flex-container">
-        <h3>Two Way Binding:</h3>
-        <div class="flex-container flex-vertical-center">
-          <input [(ngModel)]="inputValue" />
-          <div><strong>Result: </strong>{{inputValue}}</div>
+      <div>
+        <div class="flex-container">
+          <h3>Two Way Binding:</h3>
+          <div class="flex-container flex-vertical-center">
+            <input [(ngModel)]="inputValue" />
+          </div>
         </div>
+        <div><strong>Angular Result: </strong>{{inputValue}}</div>
       </div>
     </div>
   </div>
